@@ -2,8 +2,8 @@ Dask Workshop
 =============
 
 These materials provide a brief hands-on introduction to the parallel computing
-system, Dask.  They are intended to be delivered over a 60 or 90 minute session
-and cover the following topics.
+system, Dask.  They are intended to be delivered over a 90 minute session and
+cover the following topics.
 
 1.  Parallelize existing code with dask.delayed
 2.  Set up the dask.distributed system on your local laptop
@@ -17,3 +17,5 @@ within this directory.  They depend on the following libraries
 
     conda install -c conda-forge dask distributed jupyter bokeh
     pip install pandas_datareader
+
+Artificial data is automatically generated as part of the notebooks.
