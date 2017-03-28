@@ -15,7 +15,7 @@ for what can be done with Dask.
 These materials are presented as Jupyter notebooks, which should be available
 within this directory.  They depend on the following libraries
 
-    conda install -c conda-forge dask distributed jupyter bokeh
+    conda install -c conda-forge dask distributed jupyter bokeh feather-format
     pip install pandas_datareader
 
 Artificial data is automatically generated as part of the notebooks.
