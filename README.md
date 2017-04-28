@@ -19,3 +19,26 @@ within this directory.  They depend on the following libraries
     pip install pandas_datareader
 
 Artificial data is automatically generated as part of the notebooks.
+
+
+After Finishing
+---------------
+
+This tutorial covered
+[dask.dataframe](http://dask.pydata.org/en/latest/dataframe.html) and
+[dask.delayed](http://dask.pydata.org/en/latest/delayed.html) for simple
+tabular computations.  This is a common and important case, but is only one of
+many applications for which Dask is used.  If you are interested in arrays,
+machine learning, asynchronous computations, etc.  you may wish to peruse the
+documentation further:
+
+-  [Main Documentation](http://dask.pydata.org/en/latest/)
+-  [Examples](http://dask.pydata.org/en/latest/examples-tutorials.html)
+-  [Distributed scheduler](http://distributed.readthedocs.io/en/latest/) (also
+   most of the asynchronous docs)
+
+If you want to try Dask on a cluster on Amazon or Google hardware then you
+might try one of the following projects:
+
+-  [dask-ec2](http://distributed.readthedocs.io/en/latest/)
+-  [dask-kubernetes](https://github.com/martindurant/dask-kubernetes)
