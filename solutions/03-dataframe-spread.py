@@ -1,3 +1,6 @@
+df = dd.read_csv(os.path.join('data', 'stocks', 'GOOG', '*.csv'),
+                 parse_dates=['timestamp'])
+
 high = df.groupby(df.timestamp.dt.round('1d')).high.max()
 low = df.groupby(df.timestamp.dt.round('1d')).low.min()
 spread = high - low
