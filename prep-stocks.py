@@ -2,6 +2,10 @@ import dask.dataframe as dd
 import dask.multiprocessing
 import os
 import shutil
+import sys
+
+WINDOWS = sys.platform.startswith('win')
+
 
 if not os.path.exists('data'):
     os.mkdir('data')
@@ -19,4 +23,4 @@ for symbol in ['GOOG', 'YHOO', 'AAPL', 'MSFT']:
     names = [str(ts.date()) for ts in df.divisions]
     df.to_csv(os.path.join('data', 'stocks', symbol, '*.csv'),
               name_function=names.__getitem__,
-              get=dask.multiprocessing.get)
+              get=dask.multiprocessing.get if not WINDOWS else dask.threaded.get)

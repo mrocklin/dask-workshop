@@ -13,23 +13,25 @@ These topics are far from comprehensive, but have been chosen to give a flavor
 for what can be done with Dask.
 
 These materials are presented as Jupyter notebooks, which should be available
-within this directory.  They depend on the following libraries:
+within this directory.
 
-    conda install -c conda-forge dask distributed jupyter bokeh feather-format python-graphviz matplotlib
-    pip install pandas_datareader
+To get started download this repository:
 
-Artificial data is automatically generated as part of the notebooks.
+    git clone https://github.com/mrocklin/dask-workshop
 
-*Note: feather-format is not available in Python 2 on Windows.*
-
-*Note: tornado 4.5 and bokeh 0.12.5 have known compatibility issues.*
-
-You may want to create a new environment for this tutorial:
+Create a conda environment with the following commands:
 
     conda create -n dask-workshop -c conda-forge python=3 dask distributed jupyter bokeh feather-format python-graphviz matplotlib tornado=4.4
     source activate dask-workshop
     pip install pandas_datareader
+
+Then start a Jupyter notebook server and begin with the first notebook:
+
     jupyter notebook
+
+*Note: feather-format is not available in Python 2 on Windows.*
+
+*Note: tornado 4.5 and bokeh 0.12.5 have known compatibility issues.*
 
 
 After Finishing
